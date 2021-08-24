@@ -1,3 +1,7 @@
+* {
+  font-family: sans-serif;
+}
+
 .App {
   width: 70%;
   margin: auto;
@@ -9,6 +13,10 @@ body {
   background: #f1faee;
 }
 
-* {
-  font-family: sans-serif;
+.item-container {
+  border: 2px solid #dcdcdd;
+  border-radius: 1rem;
+  margin: 1.5rem;
+  text-align: left;
+  padding: 0.5rem 1rem 1rem 1rem;
 }

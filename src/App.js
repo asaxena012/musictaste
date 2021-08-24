@@ -1,5 +1,6 @@
 import "./styles.css";
 import Button from "./Components/Button";
+import { useState } from "react";
 
 export default function App() {
   const data = {
@@ -70,11 +71,13 @@ export default function App() {
     ]
   };
 
+  const [songsList, setSongslist] = useState([]);
+
   const moods = Object.keys(data);
 
   const showMusic = (mood) => {
     const music = data[mood];
-    console.log(music);
+    setSongslist(music);
   };
 
   return (
@@ -89,6 +92,19 @@ export default function App() {
         })}
       </div>
       <hr />
+
+      {songsList.length ? (
+        songsList.map((item) => {
+          return (
+            <div className="item-container">
+              <h3>{item.song}</h3>
+              <small>by {item.createdBy}</small>
+            </div>
+          );
+        })
+      ) : (
+        <p>You've gotta click on one of those buttons to see something here</p>
+      )}
     </div>
   );
 }
