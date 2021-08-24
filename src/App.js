@@ -83,11 +83,12 @@ export default function App() {
       <h3>
         What I listen to for different moods! Select a mood to get started
       </h3>
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex", justifyContent: "center" }}>
         {moods.map((mood) => {
           return <Button text={mood} clickHandler={() => showMusic(mood)} />;
         })}
       </div>
+      <hr />
     </div>
   );
 }

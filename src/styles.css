@@ -1,6 +1,14 @@
 .App {
   width: 70%;
   margin: auto;
-  font-family: sans-serif;
   text-align: center;
+  color: #1d3557;
+}
+
+body {
+  background: #f1faee;
+}
+
+* {
+  font-family: sans-serif;
 }
