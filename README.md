@@ -1,4 +1,4 @@
-# musictaste | [Live](https://ki8wu.csb.app/)
+# musictaste | [Live](https://y0o7z.csb.app/)
 
 A basic react app that suggests songs/music based on genre/mood
 
